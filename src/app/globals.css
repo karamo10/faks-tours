@@ -1,10 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
-
 
 body {
   background: var(--background);
@@ -15,4 +14,25 @@ body {
 
 .backgroundImage {
   background-image: url('/images/hero.jpeg');
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-35%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .animate-scroll {
+    animation-duration: 45s;
+  }
 }

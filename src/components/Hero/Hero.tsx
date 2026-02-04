@@ -19,14 +19,15 @@ export default function Hero() {
           '/images/hero/hero1.jpg',
           '/images/hero/hero2.jpg',
           '/images/hero/hero3.jpg',
+          '/images/hero/hero5.jpg',
         ].map((img) => (
           <SwiperSlide key={img}>
             <Image src={img} alt="Hero" fill className="object-cover" />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+      <div className="absolute inset-0 z-10 bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 capitalize">
           Explore Real Gambia with Faks Jarju
         </h1>
         <p className="text-lg md:text-2xl mb-6">
