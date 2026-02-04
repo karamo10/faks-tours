@@ -12,6 +12,11 @@ body {
   font-size: 18px;
 }
 
+.section {
+  width: min(100%, 90%);
+  margin-inline: auto;
+}
+
 .backgroundImage {
   background-image: url('/images/hero.jpeg');
 }
@@ -35,4 +40,84 @@ body {
   .animate-scroll {
     animation-duration: 45s;
   }
+}
+
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas:
+    "large large small1 small2"
+    "wide wide small3 small3";
+  gap: 1.5rem;
+}
+
+/* Assign grid areas */
+.city-item.large {
+  grid-area: large;
+}
+
+.city-item.wide {
+  grid-area: wide;
+}
+
+.city-item.small1 {
+  grid-area: small1;
+}
+
+.city-item.small2 {
+  grid-area: small2;
+}
+
+.city-item.small3 {
+  grid-area: small3;
+}
+
+/* Card base */
+.city-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.city-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Hover effect */
+.city-item:hover img {
+  transform: scale(1.08);
+}
+
+.city-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.15));
+  color: #fff;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.city-item:hover .overlay {
+  opacity: 1;
+}
+
+.city-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.city-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }

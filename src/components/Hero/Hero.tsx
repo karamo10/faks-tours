@@ -7,13 +7,13 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen">
+    <section className="relative h-screen rounded-lg md:m-[20px]">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
         autoplay={{ delay: 5000 }}
         loop
-        className="h-full"
+        className="h-full md:rounded-2xl"
       >
         {[
           '/images/hero/hero1.jpg',
@@ -26,7 +26,7 @@ export default function Hero() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute inset-0 z-10 bg-black/50 flex flex-col justify-center items-center text-center text-white px-4">
+      <div className="absolute inset-0 z-10 bg-black/50 flex flex-col justify-center items-center text-center text-white px-4 md:rounded-2xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 capitalize">
           Explore Real Gambia with Faks Jarju
         </h1>
