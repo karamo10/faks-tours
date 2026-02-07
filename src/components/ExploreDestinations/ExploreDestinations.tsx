@@ -15,7 +15,14 @@ const destinations = [
     name: 'Kunta Kinteh Island',
     slug: 'kunta-kinteh-island',
     description: 'Historic island symbolizing freedom and resilience.',
-    image: '/images/destinations/kunta-kinteh.jpg',
+    image: '/images/kunta-kinteh.jpg',
+  }
+  ,
+  {
+    name: 'Makasutu Culture Forest',
+    slug: 'makasutu-cultural-forest',
+    description: 'Lush forest reserve with diverse wildlife and cultural experiences.',
+    image: '/images/destinations/makasutu.jpg',
   },
   {
     name: 'The Gambia Reptile Farm',

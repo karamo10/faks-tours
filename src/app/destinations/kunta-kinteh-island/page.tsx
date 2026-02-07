@@ -1,20 +1,4 @@
-// import DestinationHero from "@/src/components/Destinations/DestinationHero";
 
-// export default function Page() {
-//   return (
-//     <>
-//       <DestinationHero
-//         title="Kunta Kinteh Island"
-//         description="A UNESCO World Heritage Site along the River Gambia that tells a powerful story of history and resilience."
-//         image="/images/destinations/kunta-kinteh.jpg"
-//       />
-
-//       {/* other destination sections here */}
-//     </>
-//   );
-// }
-
-// src/app/destinations/kunta-kinteh-island/page.tsx
 import DestinationHero from '@/src/components/Destinations/DestinationHero';
 import DestinationDetails from '@/src/components/Destinations/DestinationDetails';
 
@@ -24,7 +8,7 @@ export default function Page() {
       <DestinationHero
         title="Kunta Kinteh Island"
         description="A powerful journey through Gambian history and heritage."
-        image="/images/destinations/kunta-kinteh.jpg"
+        image="/images/kunta-kinteh.jpg"
       />
 
       <DestinationDetails
@@ -64,6 +48,13 @@ export default function Page() {
             answer:
               "Yes, especially for families and students interested in history and culture."
           }
+        ]}
+        duration="Full Day"
+        price="€90"
+         galleryImages={[
+          '/images/destination/kunta-kinteh-island/1.jpg',
+          '/images/destination/kunta-kinteh-island/2.jpg',
+          '/images/destination/kunta-kinteh-island/5.jpg',
         ]}
       />
     </>
