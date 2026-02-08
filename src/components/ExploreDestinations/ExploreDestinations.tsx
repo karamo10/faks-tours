@@ -12,10 +12,10 @@ const destinations = [
     image: '/images/destinations/kathically.jpeg',
   },
   {
-    name: 'Kunta Kinteh Island',
-    slug: 'kunta-kinteh-island',
+    name: 'Roots - James-Island / Juffureh',
+    slug: 'roots',
     description: 'Historic island symbolizing freedom and resilience.',
-    image: '/images/kunta-kinteh.jpg',
+    image: '/images/destinations/roots.jpg',
   }
   ,
   {
@@ -25,10 +25,10 @@ const destinations = [
     image: '/images/destinations/makasutu.jpg',
   },
   {
-    name: 'The Gambia Reptile Farm',
-    slug: 'reptile-farm',
+    name: 'Fathala Wildlife Reserve',
+    slug: 'fathala-wildlife-reserve',
     description: 'Home to reptiles showcasing West African wildlife.',
-    image: '/images/destinations/reptile-farm.jpg',
+    image: '/images/destinations/fathala.jpg',
   },
   {
     name: 'Abuko Nature Reserve',
@@ -43,12 +43,14 @@ const destinations = [
     image: '/images/destinations/river-gambia.jpg',
   },
   {
-    name: 'Jufureh',
-    slug: 'jufureh',
-    description: 'Famous village linked to the story of Kunta Kinteh.',
-    image: '/images/destinations/jufureh.jpg',
-  },
+    name: 'The Gambia Reptile Farm',
+    slug: 'reptile-farm',
+    description: 'Home to reptiles showcasing West African wildlife.',
+    image: '/images/destinations/reptile-farm.jpg',
+  }
 ];
+
+const destination = destinations.slice(0, 6);
 
 export default function ExploreDestinations() {
   return (
@@ -62,7 +64,7 @@ export default function ExploreDestinations() {
       {/* <h2 className="text-3xl font-bold mb-10">Explore Top Destinations</h2> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {destinations.map((place) => (
+        {destination.map((place) => (
           <Link
             href={`/destinations/${place.slug}`}
             key={place.name}

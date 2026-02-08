@@ -94,7 +94,7 @@ export default function DestinationDetails({
                     key={i}
                     src={img}
                     alt=""
-                    className="rounded-lg object-cover h-24 w-full"
+                    className="rounded-lg object-cover h-28 w-full"
                   />
                 ))}
               </div>

@@ -50,8 +50,9 @@ export default function Page() {
                  'Absolutely! Bring your camera to capture the incredible wildlife and scenic beauty of the reserve.',
              },
            ]}
-           duration="Half Day"
-           price="€60"
+           duration="Full Day"
+           price="Available on request
+"
            galleryImages={[
              '/images/destination/abuko-nature-reserve/5.jpg',
              '/images/destination/abuko-nature-reserve/2.jpg',
