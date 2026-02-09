@@ -28,8 +28,7 @@ export default function Home() {
         </div>
         
         <CitiesGrid cities={cities} />
-      </section>
-      
+      </section>    
       <Testimonial />
       <TourSlider />
     </div>

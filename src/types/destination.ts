@@ -13,10 +13,7 @@ export type DestinationDetailsProps = {
   price?: string;
   bookingLink?: string;
 
-//   🔽 ONLY images are dynamic
+//   ONLY images are dynamic
   galleryImages?: string[];
 };
 
-//  <div className="rounded-xl overflow-hidden">
-//               <YouTubeEmbed videoId="qt--1w7gJ8o" autoplay />
-//             </div>

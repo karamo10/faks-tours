@@ -78,8 +78,8 @@ export default function ExploreDestinations() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
-            {/* Overlay opacity-0 group-hover:opacity-100 */}
-            <div className="absolute inset-0 bg-black/60 opacity-100 transition-opacity duration-400 flex items-end">
+            {/* Overlay opacity-0 group-hover:opacity-100 transition-opacity duration-400 */}
+            <div className="absolute inset-0 bg-black/60 flex items-end">
               <div className="p-6 text-white">
                 <h3 className="text-xl font-semibold mb-2">{place.name}</h3>
                 <p className="text-sm leading-relaxed">{place.description}</p>
