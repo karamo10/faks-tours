@@ -68,7 +68,7 @@ export default function ExploreDestinations() {
           <Link
             href={`/destinations/${place.slug}`}
             key={place.name}
-            className="group relative h-[380px] rounded-xl overflow-hidden cursor-pointer"
+            className="group relative min-h-[380px] rounded-xl overflow-hidden cursor-pointer"
           >
             {/* Image */}
             <Image
@@ -79,7 +79,7 @@ export default function ExploreDestinations() {
             />
 
             {/* Overlay opacity-0 group-hover:opacity-100 transition-opacity duration-400 */}
-            <div className="absolute inset-0 bg-black/60 flex items-end">
+            <div className="absolute inset-0 bg-black/60 flex items-end rounded-xl">
               <div className="p-6 text-white">
                 <h3 className="text-xl font-semibold mb-2">{place.name}</h3>
                 <p className="text-sm leading-relaxed">{place.description}</p>

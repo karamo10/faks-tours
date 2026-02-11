@@ -7,17 +7,17 @@ const tours = [
   {
     name: 'Fathala Safari Park',
     slug: 'fathala-safari-park',
-    image: '/images/fathala/fathala.jpg',
+    image: '/images/galleries/fathala/fathala.jpg',
   },
   {
     name: 'Makasutu Cultural Forest',
     slug: 'makasutu-forest',
-    image: '/images/makasutu/makasutu.jpg',
+    image: '/images/galleries/makasutu/makasutu.jpg',
   },
   {
     name: 'River Excursion',
     slug: 'river-excursion',
-    image: '/images/river/river.jpg',
+    image: '/images/galleries/river-gambia/river-gambia.jpg',
   },
 ];
 
@@ -29,10 +29,9 @@ export default function TourSlider() {
 
       <div className="flex gap-6 animate-scroll group-hover:[animation-play-state:paused] px-6 auto-s">
         {tours.concat(tours).map((tour, i) => (
-          <Link
+          <div
             key={i}
-            href={`/tours/${tour.slug}`}
-            className="group relative min-w-[420px] h-[380px] rounded-xl overflow-hidden bg-red-100"
+            className="group relative min-w-[420px] h-[380px] rounded-xl overflow-hidden cursor-pointer"
           >
             <Image
               src={tour.image}
@@ -49,7 +48,7 @@ export default function TourSlider() {
                 </span>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </section>

@@ -1,51 +1,45 @@
-export interface City {
-  id: number;
-  name: string;
-  slug: string;
-  image: string;
-  description: string;
-  area: string; // grid-area name
-}
+import { City } from '../types/cities';
 
 export const cities: City[] = [
   {
     id: 1,
-    name: "Jufureh",
-    slug: "jufureh",
-    image: "/images/destinations/jufureh.jpg",
-    description: "Historic town linked to Kunta Kinteh and local heritage.",
-    area: "large",
+    name: '(Georgetown)',
+    slug: 'jang-jang-burreh',
+    image: '/images/destinations/jang-jang-bureh.jpg',
+    description:
+      'Jang Jang Burreh (Georgetown) is the name given to the island by a brother and sister who discovered it.',
+    area: 'small',
   },
   {
     id: 2,
-    name: "Tanjeh",
-    slug: "tanjeh",
-    image: "/images/cities/tanjeh.jpg",
-    description: "Coastal village with beautiful sea views.",
-    area: "small1",
+    name: 'City Tour',
+    slug: 'city-tour',
+    image: '/images/destinations/banjul.jpg',
+    description: 'Iconic monument with city views.',
+    area: 'wide',
   },
   {
     id: 3,
-    name: "Banjul – Albert Market",
-    slug: "albert-market",
-    image: "/images/cities/albert-market.jpg",
-    description: "Bustling local market and cultural hub.",
-    area: "wide",
+    name: 'Gambian Home Cooking',
+    slug: 'gambian-home-cooking',
+    image: '/images/destinations/gambian-home-cooking.jpg',
+    description: 'Experience authentic Gambian cuisine in a local home.',
+    area: 'small',
   },
   {
     id: 4,
-    name: "Serekunda Market",
-    slug: "serekunda",
-    image: "/images/cities/arch22.jpg",
-    description: "The heart of daily Gambian life.",
-    area: "small2",
+    name: 'Tanjeh',
+    slug: 'tanjeh',
+    image: '/images/destinations/tanjeh.jpg',
+    description: 'Coastal village with beautiful sea views.',
+    area: 'wide',
   },
   {
     id: 5,
-    name: "Arch 22",
-    slug: "arch-22",
-    image: "/images/cities/arch22.jpg",
-    description: "Iconic monument with city views.",
-    area: "small3",
+    name: 'Serekunda Market',
+    slug: 'serekunda-market',
+    image: '/images/destinations/serekunda-ma.jpg',
+    description: 'The heart of daily Gambian life.',
+    area: 'wide',
   },
 ];

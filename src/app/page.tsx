@@ -4,9 +4,10 @@ import StatsSection from '../components/Stats/StatsSection';
 import ExploreDestinations from '../components/ExploreDestinations/ExploreDestinations';
 import Testimonial from '../components/Testimonials/Testimonials';
 import TourSlider from '../components/TourSlider/TourSlider';
+import Cities from '../components/Cities/Cities';
 import Booking from '../components/Booking/Booking';
 // import Cities from '../components/City/City';
-import CitiesGrid from '../components/CitiesGrid/CitiesGrid';
+// import CitiesGrid from '../components/Cities/CitiesGrid';
 import { cities } from '../data/cities';
 
 export default function Home() {
@@ -16,9 +17,8 @@ export default function Home() {
       <About />
       <StatsSection />
       <ExploreDestinations />
-      {/* <Cities /> */}
-      <section className="explore-cities section">
-        {/* Header */}
+      <Cities />
+      {/* <section className="explore-cities section">
         <div className="text-center mb-14">
           <span className="uppercase text-sm tracking-widest text-orange-500 font-semibold">
             Explore Cities & Local Life
@@ -28,7 +28,8 @@ export default function Home() {
         </div>
         
         <CitiesGrid cities={cities} />
-      </section>    
+      </section>    */}
+      {/* cities */}
       <Testimonial />
       <TourSlider />
     </div>
