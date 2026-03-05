@@ -34,7 +34,7 @@ export default function Testimonials() {
 
     const interval = setInterval(() => {
       setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
-    }, 4000);
+    }, 9000);
 
     return () => clearInterval(interval);
   }, [visibleCards, totalSlides]);
@@ -55,7 +55,7 @@ export default function Testimonials() {
           <div
             className="flex gap-8 items-stretch transition-transform duration-700 ease-in-out"
             style={{
-              transform: `translateX(-${current * (100 / visibleCards)}%)`,
+              transform: `translateX(-${current * (107 / visibleCards)}%)`,
             }}
           >
             {testimonials.map((item, index) => (
