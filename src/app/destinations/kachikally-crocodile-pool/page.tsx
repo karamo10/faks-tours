@@ -26,7 +26,7 @@ export default function Page() {
             ]}
             info={[
               "Full-day tour with pick-up and drop-off at your accommodation",
-              "Price: €75 per person",
+              "Price: Available on request",
               "Includes local guide, transport, and entry fees",
               "Wear: comfortable clothing, sun protection, camera, and an open heart for cultural immersion",
             ]}
@@ -59,7 +59,7 @@ export default function Page() {
               },
             ]}
             duration="Full Day"
-            price="€70"
+            price="Available on request"
              galleryImages={[
               '/images/destination/kathically/1.jpg',
               '/images/destination/kathically/2.jpg',
