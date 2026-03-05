@@ -7,6 +7,7 @@ export default function CityGrid({ cities }: { cities: City[] }) {
     <section className="grid grid-cols-4 gap-8">
       {cities.map((c) => (
         <Link
+          key={c.id}
           href={`/experience/${c.slug}`}
           className={`group relative min-h-[380px] city-item ${c.area} rounded-xl overflow-hidden`}
         >
