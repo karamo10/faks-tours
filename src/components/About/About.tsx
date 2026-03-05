@@ -7,8 +7,8 @@ export default function About() {
         {/* Image Blob */}
         <div className="relative flex justify-center">
           {/* Blob background */}
-          <div className="absolute w-[360px] h-[360px] bg-orange-100 rounded-full -top-6 -left-6"></div>
-          <div className="absolute w-[300px] h-[300px] bg-orange-200 rounded-full top-10 left-10"></div>
+          <div className="absolute w-[300px] h-[360px] md:w-[360px] bg-orange-100 rounded-full -top-6 -left-6"></div>
+          <div className="absolute w-[245px] h-[300px] md:w-[300px] bg-orange-200 rounded-full top-10 left-10"></div>
 
           {/* Image */}
           <div className="relative w-[280px] h-[380px] rounded-[140px] overflow-hidden shadow-xl">
