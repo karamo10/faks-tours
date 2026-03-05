@@ -17,6 +17,42 @@ body {
   margin-inline: auto;
 }
 
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  gap: 1.5rem;
+}
+
+.city-item.wide {
+  grid-column: span 2;
+}
+
+/* Card base */
+.city-item {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 14px; */
+}
+
+/* Galleries scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ffd7a8;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff6900;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -33,31 +69,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  .animate-scroll {
-    animation-duration: 45s;
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
   }
-}
-
-.cities-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 250px);
-  gap: 1.5rem;
-}
-
-
-.city-item.wide {
-  grid-column: span 2;
-}
-
-/* Card base */
-.city-item {
-  position: relative;
-  overflow: hidden;
-  /* border-radius: 14px; */
-}
-
-@media (max-width: 768px) {
+  .animate-scroll {
+    animation-duration: 45s linear infinite;
+  }
   .cities-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 200px);
@@ -71,6 +94,21 @@ body {
     grid-column: span 4;
   }
 }
+
+/* @media (max-width: 768px) {
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 200px);
+  }
+
+  .city-item.small {
+    grid-column: span 4;
+  }
+
+  .city-item.wide {
+    grid-column: span 4;
+  }
+} */
 
 /* .city-item img {
   width: 100%;
