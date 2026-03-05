@@ -39,12 +39,12 @@ export default function About() {
           </p>
 
           <p className="text-gray-700 mb-6 leading-relaxed">
-            I focus on authentic local experiences — culture, wildlife, history,
-            and everyday life — always tailored to your interests.
+            I focus on authentic local experiences - culture, wildlife, history,
+            and everyday life always tailored to your interests.
           </p>
 
           <div className="flex justify-start flex-col space-y-4">
-            <div className="flex items-center gap-3 text-orange-600 font-semibold">
+            <div className="flex items-center gap-3 text-orange-500 font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -66,7 +66,7 @@ export default function About() {
               </svg>
               <span>Kololi</span>
             </div>
-            <div className="flex items-center gap-3 text-orange-600 font-semibold">
+            <div className="flex items-center gap-3 text-orange-500 font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

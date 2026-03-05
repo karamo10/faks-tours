@@ -1,4 +1,3 @@
-// src/types/destination.ts
 export type FAQItem = {
   question: string;
   answer: string;

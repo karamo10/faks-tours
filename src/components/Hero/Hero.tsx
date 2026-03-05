@@ -7,19 +7,19 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen rounded-lg md:m-[20px]">
+    <section className="relative h-screen rounded-lg md:m-[10px]">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 4000 }}
         loop
         className="h-full md:rounded-2xl"
       >
         {[
-          '/images/hero/hero1.jpg',
-          '/images/hero/hero2.jpg',
-          '/images/hero/hero3.jpg',
-          '/images/hero/hero5.jpg',
+          '/images/hero-img/hero1.jpg',
+          '/images/hero-img/hero2.jpg',
+          '/images/hero-img/hero3.jpg',
+          '/images/hero-img/hero4.jpg',
         ].map((img) => (
           <SwiperSlide key={img}>
             <Image src={img} alt="Hero" fill className="object-cover" />
