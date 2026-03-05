@@ -9,7 +9,7 @@ const destinations = [
     name: 'Kachikally Crocodile Pool',
     slug: 'kachikally-crocodile-pool',
     description: 'Sacred crocodile pool rich in Gambian culture and history.',
-    image: '/images/destinations/kathically.jpeg',
+    image: '/images/destinations/kathically.jpg',
   },
   {
     name: 'Roots - James-Island / Juffureh',
