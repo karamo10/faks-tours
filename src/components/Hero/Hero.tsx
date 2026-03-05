@@ -4,14 +4,18 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import Image from 'next/image';
+import Nav from '../Nav/Nav';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen rounded-lg md:m-[10px]">
+    <section className="relative h-screen rounded-lg md:m-[15px]">
+      
+      <Nav />
+
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 9000 }}
         loop
         className="h-full md:rounded-2xl"
       >
@@ -26,6 +30,7 @@ export default function Hero() {
           </SwiperSlide>
         ))}
       </Swiper>
+  
       <div className="absolute inset-0 z-10 bg-black/50 flex flex-col justify-center items-center text-center text-white px-4 md:rounded-2xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 capitalize">
           Explore Real Gambia with Faks Jarju
@@ -33,21 +38,22 @@ export default function Hero() {
         <p className="text-lg md:text-2xl mb-6">
           Official Licensed Tourist Guide
         </p>
-        <div className="flex gap-4">
+       
+      </div>
+    </section>
+  );
+}
+ {/* <div className="flex gap-4">
           <a
-            href="#booking"
+            href="/booking"
             className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded font-semibold"
           >
             Book a Trip
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="bg-white text-black hover:bg-gray-200 px-6 py-3 rounded font-semibold"
           >
-            Contact Me
+            Contact
           </a>
-        </div>
-      </div>
-    </section>
-  );
-}
+        </div> */}
